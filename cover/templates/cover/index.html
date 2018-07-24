@@ -2,4 +2,15 @@
 
 {%block content%}
     cover/index.html
+    <form action="">
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+        <input type="submit" value="Generate O RLY">
+    </form>
+
+    <img src="/cover/image.jpg" alt="">
+    
+    
 {%endblock%}
